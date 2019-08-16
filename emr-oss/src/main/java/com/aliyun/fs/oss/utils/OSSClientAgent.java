@@ -57,7 +57,8 @@ import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.text.
+  ;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -784,7 +785,9 @@ public class OSSClientAgent {
   private static class ObjectMetadataDeserializer
       implements JsonDeserializer<ObjectMetadata> {
     private DateFormat df =
-        new SimpleDateFormat("MMM d, yyyy K:mm:ss a", Locale.ENGLISH);
+        new 
+      
+      ("MMM d, yyyy, K:mm:ss a", Locale.ENGLISH);
 
     public ObjectMetadata deserialize(JsonElement json, Type typeOfT,
         JsonDeserializationContext context) {
